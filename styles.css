@@ -1,0 +1,195 @@
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@100..900&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@100..900&family=Matemasie&family=Vidaloka&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Roboto", sans-serif; /* Define a fonte padrão */
+    color: #48515d; /* Cor do texto */
+    background-color: #DFDBE5;
+    background-image: url("https://wallpapercave.com/wp/wp3256638.jpg");
+    background-repeat: no-repeat;
+    background-position: center; /* Alinha o background no centro horizontal e vertical */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+/* Adiciona gradiente ao texto do h1 */
+h1 {
+    /* font-family: "Matemasie", sans-serif; /* Define a fonte padrão */
+    font-size: 9em; /* Ajuste o tamanho da fonte conforme necessário */
+    background: linear-gradient(to right, #6894c9, #214f87); /* Gradiente desejado */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
+    background-clip: text; /* Necessário para navegadores não-WebKit */
+    margin-top: -30px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 0px; /* Ajuste o valor conforme necessário */
+}
+
+h3 {
+    font-family: "Vidaloka", sans-serif; /* Define a fonte padrão */
+    text-align: center;
+    font-size: 1em; /* Ajuste o tamanho da fonte conforme necessário */
+    background: linear-gradient(to right, #214f87, #6894c9); /* Gradiente desejado */
+    -webkit-background-clip: text; /* Faz o gradiente aparecer no texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o gradiente */
+    margin-top: 0px; /* Ajuste o valor conforme necessário */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #F28CBA; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #f2559c; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+.item-resultado {
+    display: flex; /* Alinha horizontalmente a imagem e o texto */
+    padding: 12px; /* Espaço interno da caixa */
+    background-color: #ffffff; /* Fundo branco para a caixa */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para adicionar profundidade */
+    border: 1px solid #ddd; /* Borda sutil ao redor da caixa */
+    max-width: 800px; /* Largura máxima do box */
+    margin: 10px auto; /* Centraliza o box horizontalmente e adiciona margem superior e inferior */
+}
+
+.titulo-texto {
+    padding: 12px; /* Espaço interno da caixa */
+    max-width: 800px; /* Largura máxima do box */
+}
+
+.imagem-container {
+    margin-right: 10px; /* Espaço entre a imagem e o texto à direita */
+}
+
+.imagem-redonda {
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    border-radius: 20%; /* Torna a borda da imagem arredondada, criando um efeito de imagem circular */
+    object-fit: cover; /* Faz com que a imagem cubra completamente o container, mantendo a proporção e evitando distorção */
+}
+
+.texto-conteudo {
+    display: flex; /* Ativa o layout Flexbox para o container de texto */
+    flex-direction: column; /* Alinha os itens verticalmente */
+  }
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Define a cor do texto da descrição */
+    margin-top: 10px; /* Adiciona um espaço de 10 pixels acima da descrição */
+    text-align: left; /* Alinha o texto da descrição à esquerda */
+}
+
+h2 {
+    margin: 0; /* Remove a margem padrão do h2, garantindo que não haja espaço extra ao redor do título */
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte do título como 'Chakra Petch', com uma fonte de fallback sans-serif */
+    font-size: 1.5rem; /* Define o tamanho da fonte do título como 1.5rem */
+    color: #F28CBA; /* Define a cor do texto do título como um tom de rosa */
+}
+
+/* Adiciona efeito hover ao título h2 */
+h2:hover {
+    color: #6894c9; /* Muda a cor do texto do título para azul quando o mouse passa sobre ele */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position:fixed; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 0.8rem; /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
