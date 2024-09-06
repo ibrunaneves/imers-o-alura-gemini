@@ -49,6 +49,6 @@ Se você tiver alguma sugestão ou quiser adicionar novas funcionalidades, fique
 
 #Friends #JavaScript #HTML #CSS #Programação #ImersãoAlura #Gemini
 
-**➡️ Contato [E-mail](ibrunaneves@gmail.com) | [LinkedIn](https://www.linkedin.com/in/bruna-neves-757546100/)**
+**➡️ Contato [E-mail](ibrunaneves@gmail.com) | [LinkedIn](https://www.linkedin.com/in/bruna-neves-757546100/) | [Vercel](https://imersao-alura-gemini-xi.vercel.app)**
 
 ✨ Obrigada por conferir meu projeto! Espero que você se divirta tanto quanto eu me diverti criando-o. 😊
