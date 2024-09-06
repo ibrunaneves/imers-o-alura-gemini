@@ -4,7 +4,7 @@ function pesquisar() {
 
     // Se o campoPesquisa for uma string vazia: o trim() remove todos os espaços em branco do início e do final da string. A negação (!) verifica se a string após o trim() está vazia
     if (!campoPesquisa.trim()) {
-        section.innerHTML = "Poxa, nenhum personagem foi encontrado ):";
+        alert("Poxa, nenhum personagem foi encontrado ):");
         return;
     }
 
@@ -38,7 +38,7 @@ function pesquisar() {
 
     // Verifica se há resultados após o loop
     if (!resultados) {
-        section.innerHTML = "Você precisa digitar o nome de um dos 6 personagens!";
+        alert("Você precisa digitar o nome de um dos 6 personagens! :)");
     } else {
         section.innerHTML = resultados;
     }
